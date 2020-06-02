@@ -1,0 +1,412 @@
+body{
+    background-image: url(foto.jpg);
+    background-size: 100vw 100vh; /*para que la imagen siempre tenga el 100% de la ventana*/
+    background-attachment: fixed; /*para que la imagen quede fija en el scroll*/
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.imagenNav{
+    width: 80px;
+}
+
+.form_log{
+    margin-top: 12px;
+}
+
+.contenedorTablaJugadores {
+    margin-left: 15px;
+    width: 250px;
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.3em;
+}
+
+th {
+    background: rgba(192, 186, 186, 0.3);
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+}
+
+.contenedorTablaDivisionesCrud {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 50%;
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+caption {
+    background: rgba(117, 114, 114, 0.5);
+    color: rgb(255, 255, 255);
+    caption-side: top;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.contenedorPerfil{
+    display:flex;
+	flex-flow:row wrap;
+    margin-top: 40px;
+    margin-left: 40px;
+    height: auto;
+}
+
+.datosJugador{
+    width: 600px;
+    height: 650px;
+    margin-left: 40px;
+    background-color: rgb(250, 247, 235, 0.4);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.imagen_perfil{
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+#nombre_jugador_perfil{
+    font-size: 3em;
+    font-weight: bolder;
+    background-color: rgba(20, 20, 20, 0.5);   
+    color: aliceblue; 
+    padding-left: 10px;
+}
+
+.contenedorFrase {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.contenedorFrase img{
+    width: 120px;
+}
+
+.frase{
+    font-size: 1.7em;
+    font-family: Aharoni;
+}
+
+h1{
+    font-weight: bolder;
+    font-size: 3em;   
+    font-family: Aharoni;
+}
+
+.table-fixed tbody{
+    height: 600px;
+    overflow-y: auto;
+    width: 330px;
+}
+
+.table-fixed thead,
+.table-fixed tbody,
+.table-fixed td,
+.table-fixed th{
+    display: block;
+}
+
+.table-fixed tbody td,
+.table-fixed thead > tr > th{
+    float: left;
+    border-bottom-width: 0;
+}
+
+.centrar{
+    display:block;
+    margin:auto;
+    text-align: center;
+}
+
+.imagen_show_player{
+    display:block;
+    margin:auto;
+    width: 110px;
+    height: 150px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.puesto{
+    color: rgb(3, 3, 26);
+    background-color: whitesmoke;
+}
+
+.margen{
+    margin-top: 5px;
+}
+
+.alto{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor_show_player{
+    width: 150px;
+    padding-bottom: 15px;
+    background-color: rgb(213, 241, 213, 0.2);
+    border-radius: 15px;
+}
+
+.fuente_nombre{
+    font-family: aharoni;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.contenedor{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:1em;
+    margin: 20px;
+}
+
+.fila{
+    background-color: rgb(250, 245, 227, 0.5);
+    font-weight: bold;
+    width: 150px;
+}
+
+.otros_perfiles{
+    width: 350px;
+    padding-top: 4px;
+    background-color: rgb(250, 247, 235, 0.4);
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.titulo_otros_perfiles{
+    font-size: 1.5em;
+    text-align: center;    
+}
+
+.contenedor_divisiones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:1em;
+    margin: 15px;
+}
+
+.contenedor_show_division{
+    width: 400px;
+    padding-bottom: 15px;
+    background-color: rgb(213, 241, 213, 0.4);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.alto_excepciones{
+    height: 120px;
+    display: flex;
+    text-align: justify;
+}
+
+.titulo_mostrar_jugadores, .contenedor_welcome{
+    font-size: 1.7em;
+    text-align: center;
+    background-color: rgba(38, 37, 41, 0.5);
+    color: whitesmoke;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.ancho{
+    width: max-content;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn_alta{
+    margin-top: 15px;
+}
+
+#form_add_jugador {
+    background-color:  rgba(38, 37, 41, 0.5);
+    width: 400px;
+    border-radius: 15px;
+    margin: 10px auto;
+}
+
+#form_delete_jugador {
+    background-color:  rgba(38, 37, 41, 0.5);
+    width: 700px;
+    border-radius: 15px;
+    margin: 10px auto;
+}
+
+.btn-eliminar-jugador{
+    margin-left: 220px;
+}
+
+#pregunta-eliminar-jugador{
+    padding-top: 15px;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0px;
+}
+
+#form_edit_jugador{
+    background-color:  rgba(38, 37, 41, 0.5);
+    width: 700px;
+    border-radius: 15px;
+    margin: 10px auto;
+}
+
+form h1{
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+#form_add_jugador input, select, textarea{
+    width: 300px;
+    height: 45px;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#form_edit_jugador input{
+    width: 300px;
+    height: 45px;
+    text-align: left;
+    margin-left: 60px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.fila_form_edit_jugador{
+    text-align: right;
+    margin-right: 30px;
+}
+
+.btn-volver-edit-jug{
+    margin-right: 53px;
+}
+
+textarea{
+    height: 150px;
+}
+
+#form_add_jugador button{
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+#form_add_jugador button{
+    margin-left: 93px;
+}
+
+#form_add_jugador a{
+    margin-left: 15px;
+}
+
+.btn-volver{
+    width: 100px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.contenedor_welcome{
+    padding: 10px;
+}
+
+.mayuscula{
+    text-transform: uppercase;
+}
+
+label{
+    font-weight: bolder;
+    font-size: 1em;   
+    font-family: Aharoni;
+    margin-left: 52px;
+    margin-bottom: 0px;
+    color: whitesmoke;
+}
+
+.contenedor-alert-usuario{
+    font-size: 1em;
+    font-weight: bold;
+    width: 400px;
+    height: 25px;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0px;
+    background-color: rgb(188, 191, 224);
+}
+
+.contenedor-alert-division{
+    font-size: 1em;
+    font-weight: bold;
+    width: auto;
+    height: 25px;
+    text-align: center;
+    margin-top: 18px;
+    padding: 0px;
+    background-color: rgb(188, 191, 224);
+    border: whitesmoke;
+}
+
+.contenedor-btn-mensaje{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1em;
+    margin: 15px;
+}
+
+.contenedor-alert-modif-div{
+    font-size: 1em;
+    font-weight: bold;
+    width: 400px;
+    height: 25px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0px;
+    background-color: rgb(188, 191, 224);
+}
+
+.contenedor-alert-edit-exit{
+    font-size: 1em;
+    font-weight: bold;
+    width: 300px;
+    height: 25px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0px;
+    background-color: rgb(188, 191, 224);
+}
+
+#error{
+    font-size: 4em;
+}
+
+.nombre-usuario{
+    margin-top: 5px;
+    color: whitesmoke;
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
